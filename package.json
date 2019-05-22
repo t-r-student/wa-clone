@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon --exec node"
+    "nodemon": "nodemon --exec node",
+    "ng": "ng", 
+    "build": "ng build --prod", 
+    "start": "ng build --prod && node dist/server/app.js"
   },
   "engines": {
     "node": "v11.15.0",
@@ -26,4 +29,5 @@
     "eslint-plugin-react": "^7.13.0",
     "nodemon": "^1.19.0"
   }
+  
 }
